@@ -11,11 +11,38 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
-<body>
+    <style>
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 10px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 10%;
+          }
+          button1 {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 10px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+          }
+          
+          button,button1:hover {
+            opacity: 0.8;
+          }
+          th,td,h2{
+              color:white
+          }
+    </style>
+<body style="background-image:url('img/Survey.png'); ">
     <div class="container-fluid" id="survey">
         <div class="container">
             <h2 class="text-center">แบบสอบถามความเครียด</h2>
-            <form action="videocall" method="post"></form>
+            <form action="videocall" method="post">
             <table class="table table-hover" style="background: none; color: #fff !important;">
               <thead>
                 <tr>
@@ -76,7 +103,12 @@
                 </tr>
               </tbody>
             </table>
+            <div class="text-center"><a style="color:yellow"href="https://www.dmh.go.th/test/">ที่มาจาก กรมสุขภาพจิต CLICK</a></div> </div>
+            <div class="text-right"><button type="submit">Next</button></div>
+            </form>
         </div>
+        
+        
     </div>
 </body>
 </html>
