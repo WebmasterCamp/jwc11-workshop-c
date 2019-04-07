@@ -8,116 +8,96 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        nav {
+            text-align: center;
+            list-style-type: none;
+        }
+        body {
+            position: relative;
+            text-align: center;
+        }
+        ul.nav-pills {
+            top: 20px;
+            position: fixed;
+        }
+        div.col-8 div {
+            height: 500px;
+        }
+
+        #section1, #section2, #section3, #section4 {
+            height: 100vh;
+            padding: 10vh;
+        }
+
+        #section1 img, #section2 img, #section3 img, #section4 img {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+<div class="container-fluid" style="margin-top: 0;">
+  <div class="row">
+    <nav id="myScrollspy">
+      <ul class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <li class="nav-item">
+          <a class="nav-link active" href="#section1">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">Who we are?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">Doctor</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Sponsor</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#section41">Link 1</a>
+            <a class="dropdown-item" href="#section42">Link 2</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="col-sm-12 col-12">
+      <div id="section1">    
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <img class="img-fluid" src="img/home/home1.png" alt=""><br>
+                <img class="img-fluid" src="img/home/home2.png" alt=""><br>
+                <img class="img-fluid" src="img/home/home3.png" alt="">
+            </div>
+            <div class="col-sm-2" class="text-right" style="padding: 25px 0">
+                <a href="emergency.html"><img src="icon/next.png" alt=""><br><span style="color: red;">Emergency</span></a>
+            </div>
+        </div>
+      </div>
+      <div id="section2"> 
+        <h1>Who are we?</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>        
+      <div id="section3">         
+        <h1>Section 3</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="section41">         
+        <h1>Section 4-1</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>      
+      <div id="section42">         
+        <h1>Section 4-2</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
-<body class="tempting-azure-gradient">
-    <div class="container-fluid" id="login">
-        <style>
-          body{background: linear-gradient(to top right, #80e5ab 7%, #6bccff 65%);}
-          input[type=text], input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-          }
-          
-          button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-          }
-          
-          button:hover {
-            opacity: 0.8;
-          }
-          
-          .cancelbtn {
-            width: auto;
-            padding: 10px 18px;
-            background-color: #f44336;
-          }
-          .signupbtn {
-            width: auto;
-            padding: 10px 18px;
-            background-color: #4CAF50;
-          }
-          
-          .imgcontainer {
-            text-align: center;
-            margin: 24px 0 12px 0;
-          }
-          
-          img.avatar {
-            width: 40%;
-            border-radius: 50%;
-          }
-          
-          .container {
-            padding: 16px;
-          }
-          
-          span.psw {
-            float: right;
-            padding-top: 16px;
-          }
-          
-          /* Change styles for span and cancel button on extra small screens */
-          @media screen and (max-width: 300px) {
-            span.psw {
-               display: block;
-               float: none;
-            }
-            .cancelbtn {
-               width: 100%;
-            }
-          }
-          </style>
-          
-          <form action="emoji.html">
-            <div class="container text-center">
-                <div class="row">
-                  <div class="col-sm-4"></div>
-                  <div class="col-sm-4"><img src="img/logo.png" class="img-fluid" alt="Logo"></div>
-                  <div class="col-sm-4"></div>
-                </div>
-            </div>
-          
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-3">
-                </div>
-                <div class="col-sm-6">
-                    <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required>
-                
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-                        
-                    <button type="submit">Login</button>
-                    <label>
-                      <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
-                </div>
-                <div class="col-sm-3"></div>
-              </div>
-            </div>
-          
-            <div class="container text-center">
-                <button type="submit" class="signupbtn">Sign Up</button>
-                <div style="color:red" class="psw">Forgot <a href="#" style="color:red">password?</a></div>
-            </div>
-        </form>
-        
-    </div>
-    <div class="container" id="we"></div>
-    </div>
-
 </body>
 </html>
