@@ -26,13 +26,41 @@
         padding: 0 20px;
       }
       footer {
+        position: absolute;
+        top: 100%;
+        margin-top: -150px;
   background-color: #777;
   padding: 50px;
+  text-align: center;
+  width: 100vw;
   
   color: white;
 }
-      a1:hover {
-        
+
+      button {
+        margin: auto;
+        height: 70px;
+        width: 70px;
+        background-size: 35px 35px;;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 50%;
+        border: 0;
+      }
+      #mi {
+        background-image: url('img/mi.png');
+      }
+      #ph {
+        background-image: url('img/ph.png');
+      }
+      #vo {
+        background-image: url('img/vo.png');
+      }
+      #mi:hover {
+        background-image: url('img/unmi.png');
+      }
+      #ph:hover {
+        background-image: url('img/redph.png');
       }
     </style>
 </head>
@@ -42,12 +70,14 @@
     </div>
     <script src="js/timer.js"></script>
     <div class="container-fluid" id="video">
-      <
     </div>
     <footer>
-        <a1><img src="img/mi.png" alt="Avatar" style="width:5%;"style="text-align:left"></a>       
-        <a2><img src="img/ph.png" alt="Avatar" style="width:5%;"style="text-align:center"></a>
-        <img src="img/vo.png" alt="Avatar" style="width:5%;"style="text-align:right">
+
+      <div class="row" class="text-center">
+        <div class="col-sm-4"><button id="mi"></button></div>
+        <div class="col-sm-4"><button id="ph"></button></div>
+        <div class="col-sm-4"><button id="vo"></button></div>
+      </div>
     </footer>
 
 </body>

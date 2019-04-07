@@ -12,6 +12,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
         nav {
             text-align: center;
             list-style-type: none;
@@ -47,7 +50,7 @@
 <div class="container-fluid" style="margin-top: 0;">
   <div class="row">
     <nav id="myScrollspy">
-      <ul class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <ul class="navbar navbar-expand-sm bg-light navbar-light fixed-top" style="list-style-type: none;">
         <li class="nav-item">
           <a class="nav-link active" href="#section1">Home</a>
         </li>
@@ -57,13 +60,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#section3">Doctor</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Sponsor</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#section41">Link 1</a>
-            <a class="dropdown-item" href="#section42">Link 2</a>
-          </div>
-        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#section4">Sponsor</a>
+          </li>
       </ul>
     </nav>
     <div class="col-sm-12 col-12">
@@ -76,7 +75,7 @@
                 <img class="img-fluid" src="img/home/home3.png" alt="">
             </div>
             <div class="col-sm-2" class="text-right" style="padding: 25px 0">
-                <a href="emergency.html"><img src="icon/next.png" alt=""><br><span style="color: red; font-size: 2em;">Emergency</span></a>
+                <a href="emergency.html"><img src="icon/next.png" alt=""><br><span style=" font-size: 2em; border: 3px solid red; border-radius: 10px;"><strong style="color: red !important; padding: 0 15px;">Emergency</strong> </span></a>
             </div>
         </div>
       </div>
@@ -91,7 +90,7 @@
             <div class="col-sm-2" class="text-right" style="padding: 25px 0"></div>
         </div>
       </div>        
-      <div id="section2"> 
+      <div id="section3"> 
           <div class="row">
               <div class="col-sm-2"></div>
               <div class="col-sm-8">
