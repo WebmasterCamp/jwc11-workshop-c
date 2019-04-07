@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sukjai - สุขใจคลีนิค</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bulma.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/prompt.css">
     <script src="js/bootstrap.min.js"></script>
@@ -16,6 +15,7 @@
         .containerEME{
             padding: 16px;
           }
+          
         .callbtn {
             width: auto;
             padding: 10px 18px;
@@ -26,17 +26,22 @@
             padding: 10px 18px;
             background-color: #f44336;
           }
+          #eme {
+              text-align: center;
+              padding: 30vh 0;
+          }
+          #eme .btn {
+              font-size: 3em;
+              margin: 0 10px;
+          }
     </style>
 <body>
-    <div class="containter-fluid" id="eme">
-            
+    <div class="container-fluid text-center" style="height: 100vh;" id="eme">
         <div class="container">
-            <center><h1 style="color:#f44336">EMEGENCY</h1></center>
-        <form class="form-inline" action="/action_page.php" style="padding:500px">
-            <center>
-                <button type="button" class="callbtn">Call</button></center>
-            <center><button type="button" class="chatbtn">Chat</button></center>
-            
+            <h1 style="color:#f44336">EMEGENCY</h1>
+        <form class="form" style="" action="/action_page.php">
+            <button type="button" class="btn btn-danger">Call</button>
+            <button type="button" class="btn btn-danger">Chat</button>
         </form>
         </div>
     </div>
