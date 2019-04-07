@@ -37,11 +37,11 @@
   color: white;
 }
 
-      button {
+      button, #ph {
         margin: auto;
         height: 70px;
         width: 70px;
-        background-size: 35px 35px;;
+        background-size: 35px 35px;
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 50%;
@@ -51,7 +51,11 @@
         background-image: url('img/mi.png');
       }
       #ph {
-        background-image: url('img/ph.png');
+        background: url('img/ph.png'), white;
+        background-size: 35px 35px;
+        background-size: 35px 35px;
+        background-repeat: no-repeat;
+        background-position: center;
       }
       #vo {
         background-image: url('img/vo.png');
@@ -75,7 +79,7 @@
 
       <div class="row" class="text-center">
         <div class="col-sm-4"><button id="mi"></button></div>
-        <div class="col-sm-4"><button id="ph"></button></div>
+        <div class="col-sm-4"><a id="ph" style="display: inline-block" href="index.html"></a></div>
         <div class="col-sm-4"><button id="vo"></button></div>
       </div>
     </footer>
