@@ -6,30 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sukjai - สุขใจคลีนิค</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bulma.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/prompt.css">
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
+    <style>
+        body {
+            background: grey;
+        }
+        #emoji {
+            padding: 20vh 0;
+        }
+        #emoji .emo {
+            display: block;
+            margin: auto;
+            background-size: contain !important;
+            background-repeat: no-repeat  !important;
+            height: 200px;
+        }
+        #emoji #emo-sad {
+            background: url('icon/sad-.png');
+        }
+        #emoji #emo-sad:hover {
+            background: url('icon/sad.png');
+        }
+        #emoji #emo-angry {
+            background: url('icon/angry-.png');
+        }
+        #emoji #emo-stress {
+            background: url('icon/stress-.png');
+        }
+        #emoji #emo-angry:hover {
+            background: url('icon/angry.png');
+        }
+        #emoji #emo-stress:hover {
+            background: url('icon/stress.png');
+        }
+    </style>
 <body>
     <div class="container-fluid" id="emoji">
         <div class="container">
+                <h1 class="text-center">Choose an emoji</h1>
             <div class="row">
                 <div class="col-4">
-                    <a href="#"><img src="icon/" alt=""></a>
+                    <a href="#" class="emo" id="emo-sad"></a>
                 </div>
                 <div class="col-4">
-                    <button class="btn">
-                        <img src="img/icon/angry.png" alt="Angry" class="img-fluid">
-                        <p class="text-center">Angry</p>
-                    </button>
+                    <a href="#"  class="emo" id="emo-angry"></a>
                 </div>
                 <div class="col-4">
-                    <button class="btn">
-                        <img src="img/icon/stressed.png" alt="Stressed" class="img-fluid">
-                        <p class="text-center">Stressed</p>
-                    </button>
+                    <a href="#"  class="emo" id="emo-stress"></a>
                 </div>
             </div>
         </div>
