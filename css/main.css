@@ -9,3 +9,6 @@ body {
 h1 {
     margin: 30px;
 }
+.container-fluid {
+    padding: 10vh 0;
+}
